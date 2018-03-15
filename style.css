@@ -2,28 +2,18 @@
 @import url('https://fonts.google.com/specimen/Kavivanar');
 @import url('https://fonts.google.com/specimen/Lora');
 
-h1   {text-align: center;
-border-style: solid;
-  border-bottom-width: thick;
-  border-left-width: thick;
-  border-right-width: thick;
-  border-top-width: thick;
-  border-color: white;
-}
 body {
-  background-color: #000000;
-  font-family: "cursive", serif;
+  background-color: black;
+  font-family: "Open Sans", sans-serif;
   padding: 5px 25px;
-  font-size: 50px;
+  font-size: 18px;
   margin: 0;
-  color: #000000;
+  color: #ffffff;
 }
 
 h1 {
-  font-family: "Kavivanar", serif;
-  font-size: 50px;
-  color:white;
-}
+  font-family: "Merriweather", serif;
+  font-size: 32px;
 
 ul {
   list-style-type: none;
