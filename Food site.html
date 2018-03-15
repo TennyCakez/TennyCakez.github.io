@@ -2,26 +2,155 @@
 <html>
     <head>
     <title>Fast Food</title>
-    </head>
-    <body>
-  <h1>Restuarants</h1>
+      <style>
+        .navbar {
+          overflow: hidden;
+          background-color: #333;
+          font-family: Arial, Helvetica, sans-serif;
+        }
 
+        .navbar a {
+          float: left;
+          font-size: 16px;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+
+        .dropdown {
+          float: left;
+          overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+          cursor: pointer;
+          font-size: 16px;    
+          border: none;
+          outline: none;
+          color: white;
+          padding: 14px 16px;
+          background-color: inherit;
+          font-family: inherit;
+          margin: 0;
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+          background-color: red;
+        }
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+
+        .dropdown-content a {
+          float: none;
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+
+        .dropdown-content a:hover {
+          background-color: #ddd;
+        }
+
+        .show {
+          display: block;
+        }
+      </style>
+      </head>
+      <body>
+      
+      <h1>Restuarants</h1>
+    <div class="Submit">
+      <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+      <div id="myDropdown" class="dropdown-content">
+        
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="news.asp">News</a></li>
+          <li><a href="contact.asp">Contact</a></li>
+          <li><a href="about.asp">About</a></li>
+          <li><a href="submit.asp"> Submit</a></li>
+        </ul>
+      
+      
+      
+      
+      </div>   
   <ul>
-
+    
       <a href="http://www.subway.com/en-us">SubWay</a>
-
+    
       <a href="https://www.mcdonalds.com/us/en-us.html">McDonalds</a>
-
+      
       <a href="https://www.bk.com/">Burger King</a>
-
-
+        
+          
       <a href="https://www.tacobell.com"/>Taco Bell</a>
-
+        
       <a href="https://arbys.com/">Arby's</a>
-
+      
       <a href="https://www.chick-fil-a.com/">Chick-Fil-A</a>
-
+      
      <a href="https://www.johnnyrockets.com/">JohnnyRockets</a>
+      <a href="https://www.sonicdrivein.com/">Sonic</a>
+      
+      <a href="https://www.pizzahut.com/"> Pizza Hut</a>
+      
+      <a href="https://www.papajohns.com/">Papa Johns</a>
+      
+      <a href="https://www.popeyes.com/">Popeyes</a>
+      
+      <a href="https://www.kfc.com/"> KFC</a>
+      
+      <a href="https://www.ledopizza.com/"> Ledo Pizza</a>
+      
+      <a href="https://www.jackinthebox.com/"> Jack In The Box</a>
+      
+      <a href="https://www.chilis.com/"> Chili's</a>
+      
+      <a href="https://www.checkers.com/"> Checkers</a>
+      
+      <a href="https://www.rubytuesday.com/"> Ruby Tuesday</a>
+      
+      <a href="https://www.goldencorral.com/"> Golden Corral </a>
+      
+      <a href="https://www.dennys.com/"> Dennys</a>
+      
+      <a href="https://www.tgifridays.com/"> Fridays</a>
+      
+      <a href="https://www.in-n-out.com/"> In-N-Out-Burger</a>
+      
+      </ul>
+        <script>
+          /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+          function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
 
-
+          // Close the dropdown if the user clicks outside of it
+          window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+              var myDropdown = document.getElementById("myDropdown");
+              if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+              }
+            }
+          }
+        </script>
+  
+  </body>
+      
       <link rel="stylesheet" type="text/css" href="style.css">
+      
+      
+      
